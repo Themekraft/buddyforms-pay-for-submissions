@@ -2,8 +2,8 @@
 Contributors: svenl77, gfirem, themekraft
 Tags: woocommerce, buddyforms, submission, form, create content, post, form builder, create post, pay for submission
 Requires at least: 4.9
-Tested up to: 6.1.1
-Stable tag: 1.0.3
+Tested up to: 7.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,10 @@ Charge for any kind of data submitted to your site. This can be a guest post or 
 like ( Images, Videos, Zip files, …) and much more!
 
 == Changelog ==
+= 1.0.4 - 05 Oct 2026 =
+* Compatible with WooCommerce High-Performance Order Storage (HPOS).
+* Tested up to WordPress 7.1 and WooCommerce 11.1.
+
 = 1.0.3 03 Jan 2023 =
 * Added bundle license auto activation.
 * Enabled trial version.

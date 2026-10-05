@@ -8,6 +8,7 @@
  * Author URI: https://themekraft.com/
  * License: GPLv2 or later
  * Network: false
+ * WC tested up to: 11.1
  * Text Domain: buddyforms-pay-for-submissions
  * Domain Path: /languages
  *
@@ -29,6 +30,15 @@
  *
  ****************************************************************************
  */
+
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
+	}
+);
 
 class BuddyFormsPayForSubmissions {
 

@@ -2,7 +2,7 @@
 Contributors: svenl77, gfirem, themekraft
 Tags: woocommerce, buddyforms, submission, form, create content, post, form builder, create post, pay for submission
 Requires at least: 4.9
-Tested up to: 6.1.1
+Tested up to: 7.1
 Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

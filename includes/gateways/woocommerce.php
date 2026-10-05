@@ -88,7 +88,12 @@ add_filter( 'buddyforms_ajax_process_edit_post_json_response', 'buddyforms_pay_f
  * @param $order
  */
 function buddyforms_pay_for_submissions_on_process_complete( $order_id, $from, $to, $order ) {
-	$order = new WC_Order( $order_id );
+	if ( ! $order instanceof WC_Order ) {
+		$order = wc_get_order( $order_id );
+	}
+	if ( ! $order ) {
+		return;
+	}
 	$items = $order->get_items();
 	/** @var object $item */
 	foreach ( $items as $key => $item ) {
